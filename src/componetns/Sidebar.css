@@ -1,4 +1,8 @@
-.logo{
+
+*{
+    text-decoration: none;
+
+}.logo{
     text-align: center;
     
     padding: 10px 20px;
@@ -40,12 +44,48 @@
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
     transition: all 3ms ease;
+    text-decoration: none;
+    
+ 
 
 }
+.sidebar .Item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+    color:rgb(0, 0, 0,50%);
+   
+    font-size: 15px;
+    
+    text-decoration: none;
+    
+ 
+
+}
+
 .sidebar .menuItem:hover{
     color: rgb(0, 0, 0);
 }
 .sidebar .menuItem:hover i{
     font-size: 20px;
 
+}
+.isactive{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin:20px 30px;
+    color:rgb(0, 0, 0,50%);
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5rem;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    transition: all 3ms ease;
+    text-decoration: none;
+    background-color: rgba(255,110,64,.15);
+    color:rgb(0, 0, 0);
+    border-left-color: var(--color);
+    border-right-color: var(--color);
 }

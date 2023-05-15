@@ -141,7 +141,6 @@ table tbody tr{
     border-color: transparent;
     margin: 15px;
     padding:5px 10px;
-    z-index: 1;
     
 }
 .button i{
@@ -173,9 +172,6 @@ table tbody tr{
     z-index: 1;
     
 
-}
-ul{
-    z-index: 2;
 }
 .Showmore ul li{
     padding-bottom: 10px;

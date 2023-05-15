@@ -1,6 +1,15 @@
 import './content.css'
 import {FaEllipsisV,FaPlus} from 'react-icons/fa';
+import data from './Data'
+import axios from "axios"
+
+import { NavLink } from 'react-router-dom';
 function content(){
+  function affich(){
+    
+     axios.get("http://localhost:4000/products/list").then((data)=>console.log(data))
+  }
+ 
     function Affichier() {
         var select = document.querySelector('.ul');
         if (select.style.display === "none") {
@@ -10,6 +19,7 @@ function content(){
         }
       }
     function toggleSelect1() {
+      axios.get("http://localhost:4000/products/list").then((data)=>console.log(data))
         var select = document.getElementById('list1');
         if (select.style.display === "none") {
           select.style.display = "block";
@@ -18,6 +28,7 @@ function content(){
         }
       }
       function toggleSelect2() {
+       
         var select = document.getElementById('list2');
         if (select.style.display === "none") {
           select.style.display = "block";
@@ -33,18 +44,34 @@ function content(){
           select.style.display = "none";
         }
       }
+      const tabel=data.map((item)=>{
+        return(
+          <tr>
+            <td>{item.id}</td>
+            <td>{item.photo}</td>
+            <td>{item.name}</td>
+            <td>{item.Categorie}</td>
+            <td>{item.price}</td>
+            <td>{item.Stock}</td>
+          </tr>
+        )
+      })
       
    
 return(
     <div className="contentt">
     <div className='top'>
     <p>Dashbord / Products</p>
+    
     <button> <i><FaPlus/></i>
+    <NavLink to="/AjouterProduct">
     Add Product
+    </NavLink>
     </button>
+    
     </div>
          <div className='filter'>
-         <h3>Filter Products</h3>
+         <h3 onClick={affich}>Filter Products</h3>
          <div className='select'  >
            <div className='select-btn'  onClick={toggleSelect1}>
              <sapn className='bnt-text'>Categories</sapn>
