@@ -95,37 +95,17 @@ function Affichier() {
                     </div>
                     </div>
                     
-                 <div class="size-select" >
-                 <p>Size</p>
-                 <div className='select-taill'>
-                 <label className='labelnumber' for='size' >XXL 
-                 <input className='inputNumber' id='size' type='number' value="1" />
-                 </label>
-                 <label className='labelnumber' for='size' >XXL 
-                 <input className='inputNumber' id='size' type='number' value="1" />
-                 </label>
-                 <label className='labelnumber' for='size' >XXL 
-                 <input className='inputNumber' id='size' type='number' value="1" />
-                 </label>
-                 <label className='labelnumber' for='size' >XXL 
-                 <input className='inputNumber' id='size' type='number' value="1" />
-                 </label>
-                 <label className='labelnumber' for='size' >XXL 
-                 <input className='inputNumber' id='size' type='number' value="1" />
-                 </label>
-                 <label className='labelnumber' for='size' >XXL
-                 <input className='inputNumber' id='size' type='number' value="1" />
-                 </label>
-                 <label className='labelnumber' for='size' >XXL 
-                 <input className='inputNumber' id='size' type='number' value="1" />
-                 </label>
-                
-                 
-                 
-                 
-                 
-                 </div>
-                </div>
+                    <div className='deuxInput'>
+                    <div className='inputText'>
+                       <label for="quantite" class="formbold-form-label"> size </label>
+                       <input type="text" name="quantite"  id="quantite" class="formbold-form" />
+                    </div>
+                    <div className='inputText'>
+                       <label for="quantite" class="formbold-form-label"> Marque </label>
+                        <input type="number" name="quantite" id="quantite" class="formbold-form"/>
+                    </div>
+                    
+                    </div>
                     
                 
             </div>

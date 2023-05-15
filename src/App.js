@@ -4,6 +4,7 @@ import Products from './page/Prodcuts'
 import Users from './page/Users'
 import Ajouterproducts from './page/AjouterProducts';
 import EditProduct from './page/EditProduct';
+import ProdcutsDetail from "./page/ProductDetail";
 function App (){
     
     return(
@@ -13,6 +14,7 @@ function App (){
            <Route path="/Users" element={<Users />} />
            <Route path="/AjouterProduct" element={<Ajouterproducts />} />
            <Route path="/EditProduct" element={<EditProduct />} />
+           <Route path="/ProductDetail" element={<ProdcutsDetail />} />
            </Routes>
         </BrowserRouter>
     )

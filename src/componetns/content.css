@@ -96,7 +96,7 @@ input[type=checkbox]+label::before{
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius:6px ;
-    border:1px solid rgba(0, 0, 0, 0.1) ;
+    /* border:1px solid rgba(0, 0, 0, 0.1) ; */
     z-index: 2;
 
     
@@ -104,53 +104,47 @@ input[type=checkbox]+label::before{
 }
 
 .tabelProducts{
-    width: 100%;
+    min-width: 100%;
     
     margin-bottom: 40px;
 }
 .tabelProducts table{
-   
-    width: 100%;
-}
-.tabelProducts table thead{
-    height: 50px;
-   
     
+    border-spacing: 0 15px;
+    border-collapse: separate;
+   /* background-color: red; */
+   border-color: red;
+    min-width: 100%;
 }
-table thead th{
-    padding-left: 20px;
-}
-table tbody{
-    /* background-color: white; */
-    border-radius: 6px;
-}
-table tbody td{
-    padding-left: 20px;
-    height: 65px ;
-    background-color: white;
-   border-bottom: 5px solid var(----background-color);
-   
 
+tbody tr{
+    background-color: white;
+    height: 60px;
 }
-table tbody tr{
-    border-radius: 10px;
-    
+tbody tr td{
+    /* padding-left: 20px; */
+    text-align: center;
 }
-.button{
-    background-color: transparent;
-    border-color: transparent;
+
+
+button{
+    background-color: var(----background-color);
+    border-color: var(---border-color);
     margin: 15px;
     padding:5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
     
 }
 .button i{
    
 }
-.button:hover{
+button:hover{
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-color: var(---border-color);
+    
+
 }
-.Showmore{
+/* .Showmore{
     margin: 0;
    
     display: flex;
@@ -179,4 +173,10 @@ table tbody tr{
 .Showmore ul li:hover{
     color: var(--color);
     cursor: pointer;
+} */
+.imageP{
+    width: 50px;
+    border-radius: 6px;
+    
+    margin-top: 5px;
 }

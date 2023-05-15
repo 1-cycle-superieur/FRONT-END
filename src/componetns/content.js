@@ -2,6 +2,7 @@ import './content.css'
 import {FaEllipsisV,FaPlus} from 'react-icons/fa';
 import data from './Data'
 import axios from "axios"
+import robe from "../images/robe.jpg"
 
 import { NavLink } from 'react-router-dom';
 function content(){
@@ -131,8 +132,8 @@ return(
     <table>
     <thead>
     <tr>
-                            <th>ID</th>
-                            <th>Photo</th>
+                            <th>Id</th>
+                            <th>photo</th>
                             <th>Name</th>
                             <th>Categorie</th>
                             <th>Price</th>
@@ -143,13 +144,35 @@ return(
     <tbody>
                         <tr>
                             <td>11111</td>
-                            <td>Aouay</td>
+                            <td><img className='imageP' src={robe}/></td>
+                            <td>robe</td>
+                            <td>Femme</td>
+                            <td>2000 DZ</td>
+                            <td>in stock</td>
+                            <td>
+                            <button>Show more</button>
+                            {/* <div className='Showmore'>
+                            <div className='ul'>
+                                <ul>
+                                <li>Show more</li>
+                                <li>Edit</li>
+                                <li>Delet</li>
+                                </ul>
+                                </div>
+                                <button onClick={Affichier} className='button'><i><FaEllipsisV /></i></button>
+                            </div> */}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11111</td>
+                            <td><img className='imageP' src={robe}/></td>
                             <td>Ikram</td>
                             <td>Active</td>
                             <td>01/01/2023</td>
                             <td>Active</td>
                             <td>
-                            <div className='Showmore'>
+                            <button>Show more</button>
+                            {/* <div className='Showmore'>
                             <div className='ul'>
                                 <ul>
                                 <li>Show more</li>
@@ -158,100 +181,15 @@ return(
                                 </ul>
                                 </div>
                                 <button onClick={Affichier} className='button'><i><FaEllipsisV /></i></button>
-                            </div>
+                            </div> */}
                             </td>
                         </tr>
-                        <tr>
-                            <td>11111</td>
-                            <td>Aouay</td>
-                            <td>Ikram</td>
-                            <td>Active</td>
-                            <td>01/01/2023</td>
-                            <td>Active</td>
-                            <td> <div className='Showmore'>
-                            <div className='ul'>
-                                <ul>
-                                <li>Show more</li>
-                                <li>Edit</li>
-                                <li>Delet</li>
-                                </ul>
-                                </div>
-                                <button onClick={Affichier} className='button'><i><FaEllipsisV /></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <td>11111</td>
-                            <td>Aouay</td>
-                            <td>Ikram</td>
-                            <td>Active</td>
-                            <td>01/01/2023</td>
-                            <td>Active</td>
-                            <td> <div className='Showmore'>
-                            <div className='ul'>
-                                <ul>
-                                <li>Show more</li>
-                                <li>Edit</li>
-                                <li>Delet</li>
-                                </ul>
-                                </div>
-                                <button onClick={Affichier} className='button'><i><FaEllipsisV /></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <td>11111</td>
-                            <td>Aouay</td>
-                            <td>Ikram</td>
-                            <td>Active</td>
-                            <td>01/01/2023</td>
-                            <td>Active</td>
-                            <td> <div className='Showmore'>
-                            <div className='ul'>
-                                <ul>
-                                <li>Show more</li>
-                                <li>Edit</li>
-                                <li>Delet</li>
-                                </ul>
-                                </div>
-                                <button onClick={Affichier} className='button'><i><FaEllipsisV /></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <td>11111</td>
-                            <td>Aouay</td>
-                            <td>Ikram</td>
-                            <td>Active</td>
-                            <td>01/01/2023</td>
-                            <td>Active</td>
-                            <td> <div className='Showmore'>
-                            <div className='ul'>
-                                <ul>
-                                <li>Show more</li>
-                                <li>Edit</li>
-                                <li>Delet</li>
-                                </ul>
-                                </div>
-                                <button onClick={Affichier} className='button'><i><FaEllipsisV /></i></button>
-                            </div></td>
-
-                        </tr>
-                        <tr>
-                            <td>11111</td>
-                            <td>Aouay</td>
-                            <td>Ikram</td>
-                            <td>Active</td>
-                            <td>01/01/2023</td>
-                            <td>Active</td>
-                            <td> <div className='Showmore'>
-                            <div className='ul'>
-                                <ul>
-                                <li>Show more</li>
-                                <li>Edit</li>
-                                <li>Delet</li>
-                                </ul>
-                                </div>
-                                <button onClick={Affichier} className='button'><i><FaEllipsisV /></i></button>
-                            </div></td>
-                        </tr>
+                       
+                       
+                       
+                     
+                       
+                       
                        
                         
                     </tbody>

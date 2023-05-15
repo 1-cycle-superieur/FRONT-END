@@ -10,7 +10,6 @@
 .content{
     display: grid;
     grid-template-columns: 15rem auto ;
-    background-color: var(----background-color);
     width: 100%;
     height: 100vh;
     margin: 0px;

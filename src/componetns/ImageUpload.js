@@ -22,6 +22,7 @@ function ImageUpload() {
         Choose an image
       </label>
       <input
+      name="image"
         type="file"
         id="upload"
         accept="image/*"
